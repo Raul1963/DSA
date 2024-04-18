@@ -118,7 +118,6 @@ void testMix() {
 				m.modify(i, j, 1111);
 			}
 		}
-        cout<<i<<endl;
 	}
 
 	for (int i = 0; i < size/2; i++) {
@@ -133,13 +132,10 @@ void testMix() {
 				m.modify(i, j, 1);
 			}
 		}
-        cout<<i<<endl;
 	}
 	for (int i = 0; i < size/2; i++) {
 		for (int j = 0; j < size; j++) {
-            cout<<0<<endl;
 			TElem e = m.element(i, j);
-            cout<<j<<endl;
 			if (i == j) {
 				assert(e == NULL_TELEM);
 			}
@@ -156,7 +152,6 @@ void testMix() {
 				assert(e == NULL_TELEM);
 			}
 		}
-        cout<<i<<endl;
 	}
 }
 

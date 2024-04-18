@@ -15,6 +15,12 @@ private:
         NodeSLL* next;
     };
     NodeSLL* head;
+    int lines;
+    int cols;
+
+    bool checkLexOrder();
+
+    void orderInLex();
 public:
 	//constructor
 	Matrix(int nrLines, int nrCols);
